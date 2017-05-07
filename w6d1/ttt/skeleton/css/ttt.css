@@ -1,0 +1,40 @@
+h1, h2 {
+  text-align: center;
+}
+
+ul {
+  width: 600px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  width: 180px;
+  height: 180px;
+  float: left;
+  border: 10px solid black;
+  background-color: gray;
+  font-size: 120px;
+  padding: auto;
+  text-align: center;
+}
+
+.x {
+  background-color: white;
+  color: black;
+}
+
+.o {
+  background-color: white;
+  color: blue;
+}
+
+.group {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+li:hover {
+  background-color: yellow;
+}

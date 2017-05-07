@@ -1,0 +1,38 @@
+<h1>Create a new Post:</h1>
+
+<form  action="<%= posts_url %>" method="post">
+  <input type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>" >
+
+    <label>Title:
+      <input type="text" name="post[title]">
+    </label>
+    <br>
+    <br>
+
+    <label>Content:
+      <textarea name="post[content]" rows="8" cols="50"></textarea>
+    </label>
+    <br>
+    <br>
+
+    <label>URL:
+      <input type="text" name="post[url]">
+    </label>
+    <br>
+    <br>
+
+    <label>Topic_ID:
+      <input type="text" name="post[sub_id]">
+      <input type="checkbox" name="post[sub_id][]" value="">
+    </label>
+
+    <br>
+    <br>
+
+    <input type="submit" value="SUBMIT">
+
+</form>
+<br>
+<%= link_to "Back to all subs" , subs_url%>

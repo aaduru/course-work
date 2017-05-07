@@ -1,0 +1,26 @@
+<h1><%= @track.song %> is from <%= @track.album.title%> </h1>
+<label for="ord">ORD</label>
+<input id = "ord" type="text" name="track[ord]" value="<%= @track.ord %>">
+<br>
+<br>
+<label for="lyrics">Lyrics...</label>
+<textarea name="track[lyrics]"><%= @track.lyrics%></textarea>
+<br>
+<br>
+<br>
+
+<%= render "notes/form", track: @track %>
+
+<h2>Notes</h2>
+<% @track.notes.each do |note| %>
+
+  <%= render "notes/note", note: note %>
+<% end %>
+
+
+
+
+<h2>Links</h2>
+<h6><%= link_to "UPDATE", edit_track_url %></h6>
+<h6><%= link_to "DELETE SONG", track_url(@track), method: :delete %></h6>
+<h6><%= link_to @track.album.title, album_url(@track.album) %></h2>

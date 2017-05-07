@@ -1,0 +1,9 @@
+<h1>Rental information of <% @rental_request.id %> </h1>
+
+<h3>Cat ID:  <%= @rental_request.id %></h3>
+<h3>Cat Name:  <%= @rental_request.cat.name %></h3>
+<h3>Start Date:  <%= @rental_request.start_date %></h3>
+<h3>End Date:  <%= @rental_request.end_date %></h3>
+<h3>Status:  <%= @rental_request.status %></h3>
+
+<h4><%= link_to "BACK TO INDEX", cat_rental_requests_url(@rental_request)%></h4>

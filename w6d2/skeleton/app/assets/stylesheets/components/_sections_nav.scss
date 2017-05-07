@@ -1,0 +1,19 @@
+.sections-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 713px;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+.sections-nav > li:last-of-type:hover {
+  text-decoration: underline;
+}
+.sections-nav > li:hover {
+  background-color: $gray;
+  cursor: pointer;
+}
+.sections-nav-border {
+  height: 8px;
+  border-bottom: 1px solid $light-gray;
+
+}

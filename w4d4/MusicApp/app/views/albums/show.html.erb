@@ -1,0 +1,16 @@
+<h1><%= @album.title %> by <%= @album.band.name%> </h1>
+<label for="yr">Album Release yr
+<li id = "yr" type="text" name="album[yr]"> <%= @album.yr %></li>
+</label>
+<br>
+<br>
+<h4>Links</h4>
+<h6><%= link_to "UPDATE", edit_album_url %></h6>
+<h6><%= link_to "DELETE ALBUM", album_url(@album), method: :delete %></h6>
+<h6><%= link_to @album.band.name.upcase, band_url(@album.band) %></h6>
+
+<ul>
+  <% @album.tracks.each do |track| %>
+  <li><%= link_to track.song, track_url(track) %></li>
+<% end %>
+</ul>

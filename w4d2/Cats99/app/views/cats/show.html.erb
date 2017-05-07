@@ -1,0 +1,28 @@
+<h1><%= @cat.name%> </h1>
+
+<table border="5">INFORMATION OF <%= @cat.name %>
+  <tr>
+    <th> Info </th>
+    <th> Details </th>
+ </tr>
+  <tr>
+    <td> Birth date </td>
+    <td>  <%= @cat.birth_date %> </td>
+ </tr>
+  <tr>
+    <td> Color </td>
+    <td> <%= @cat.color %>  </td>
+ </tr>
+  <tr>
+    <td> Sex</td>
+    <td> <%= @cat.sex%>  </td>
+ </tr>
+  <tr>
+    <td> Description</td>
+    <td> <%= @cat.description %> </td>
+ </tr>
+
+
+</table>
+
+<h4><%= link_to "BACK TO INDEX", cats_url(@cat)%></h4>

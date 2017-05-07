@@ -1,0 +1,15 @@
+<h1>Topic: <%= @sub.title %> by <%=@sub.moderator.username  %></h1>
+
+<label>Description:
+    <%= @sub.description %>
+</label>
+
+<ul>
+    <%@sub.posts.each do |post| %>
+      <br>
+      <%= link_to post.title, post_url(post.id) %>
+      <!-- <%#= button_to "DELETE", post_url(post.id), method: :delete %> -->
+    <% end %>
+</ul>
+
+<%= link_to "Back to all subs", subs_url %>

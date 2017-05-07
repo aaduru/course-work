@@ -1,0 +1,37 @@
+<!-- <h1> Enter your cat's information</h1>
+<form class="" action ="<%= cats_url %>" method="post">
+  <label for="name"> Name: </label>
+  <input id = "name" type="text" name="cat[name]">
+<br>
+<br>
+  <label for="sex"> Sex: </label>
+
+  <input type="radio" name="cat[sex]" value="M" checked> M
+  <input type="radio" name="cat[sex]" value="F"> F
+
+<br>
+<br>
+  <label for="color"> Color: </label>
+
+  <select id="color" name="cat[color]">
+    <option disabled <%= @cat.color ? "": "selected"%>>Please Select</option>
+    <option value = "black" <%= @cat.color == "black" ? "selected": ""%>>Black</option>
+    <option value = "white" <%= @cat.color == "white" ? "selected": ""%>>White</option>
+    <option value = "yellow" <%= @cat.color == "yellow" ? "selected": ""%>>Yellow</option>
+    <option value = "grey" <%= @cat.color == "grey" ? "selected": ""%>>Grey</option>
+  </select>
+
+<br>
+<br>
+  <label for="birth_date"> Birthday: </label>
+    <input id = "birth_date" type="date" name = "cat[birth_date]">
+<br>
+<br>
+<br>
+<label for="description"> Description: </label>
+<textarea id = "description" name="cat[description]"> </textarea>
+
+<input type ="submit" value = "Add cat to the Database">
+</form> -->
+<h1>Add Cat to Database</h1>
+<%= render 'form', action: :new, cat: @cat%>

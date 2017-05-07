@@ -1,0 +1,32 @@
+.big{
+  height: 30px;
+  width: 300px;
+  background-color: black;
+}
+.medium{
+  height: 30px;
+  width: 200px;
+  background-color: blue;
+}
+.small{
+  height: 30px;
+  width: 100px;
+  background-color: lightblue;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  border: 5px solid black;
+  height: 100px;
+  width: 320px;
+  display: flex;
+
+}
+ul {
+  width: 360px;
+  margin: 0 auto;
+}

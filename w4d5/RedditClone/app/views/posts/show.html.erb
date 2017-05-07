@@ -1,0 +1,17 @@
+<h1>Topic: <%= @post.sub.title %> by <%=@post.sub.moderator.username%></h1>
+<h3>Post: <%= @post.title %> by <%=@post.author.username %></h3>
+
+<label>Content:
+    <%= @post.content %>
+</label>
+
+<br>
+<br>
+
+<label>URL:
+  <%= @post.url %>
+</label>
+
+<br>
+<br>
+<%= link_to "Back to sub", sub_url(@post.sub_id) %>
